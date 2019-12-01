@@ -2,9 +2,9 @@
 #developed by linux-insideDE @GPN18
 
 #Credentials
-apikey=YOUR_API_KEY
-apipw=YOUR_API_PASSWORD
-cid=YOUR_CUSTOMERNUMBER
+[[ -z $apikey ]] && echo Please set apikey environment variable && exit 1
+[[ -z $apipw ]] && echo Please set apipw environment variable && exit 1
+[[ -z $cid ]] && echo Please set cid environment variable && exit 1
 
 end="https://ccp.netcup.net/run/webservice/servers/endpoint.php?JSON"
 client=""
